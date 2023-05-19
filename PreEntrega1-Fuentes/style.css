@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: DELI;
+    src: url(fonts/Deli.otf);
+}
+h1 {
+    text-align: center;
+    padding-top: 35px;
+    font-family: DELI;
+}
+
+header{
+    height: 110px;
+    color: white;
+    width: 650px;
+}
+.body-total{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/messi.jpg); 
+}
+.body-bar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/messibar.jpg);
+}
+.cabecera ul{
+    list-style: none;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.cabecera ul li{
+    display: inline-block;
+    padding: 20px;
+    margin-left: 20px;
+}
+.cabecera ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.stats {
+    width: 578px;
+    padding: 10px;
+    position: absolute;
+    left: 980px;
+}
+.clase {
+    margin-right: 45px;
+    font-size: 27px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    color: aliceblue;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 20px;
+    
+}
+.lar{
+    width: 676px;
+}
+.cor{
+    padding-left: 25px;
+    height: 20px;
+    padding-bottom: 1px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.bluee{
+    background-color: rgba(13, 67, 117, 0.384)
+}
+.redd{
+    background-color: rgba(117, 13, 13, 0.349)
+}
+.verdd{
+    background-color: rgba(13, 117, 44, 0.349)
+}
+.nar{
+    background-color: rgba(150, 88, 17, 0.356);
+}
+.vio{
+    background-color: rgba(48, 8, 75, 0.397);
+}
+
+.container {
+    display: flex;
+}
+.section1{
+    height: 900px;
+}
+
+footer {
+    background-color: black;
+}
+
+
+ul{
+    list-style: none;
+}
+.dd{
+    display: inline-block;
+}
+.vid{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+h2{
+    padding-left: 200px;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.whit{
+    color: white;
+}
