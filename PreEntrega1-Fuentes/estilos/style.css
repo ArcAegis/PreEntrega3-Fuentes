@@ -114,3 +114,6 @@ h2{
 .whit{
     color: white;
 }
+.transparent-navbar {
+    background-color: transparent;
+  }
