@@ -28,8 +28,6 @@ header{
 .stats {
     width: 578px;
     padding: 10px;
-    position: absolute;
-    left: 980px;
 }
 .clase {
     margin-right: 45px;
@@ -117,19 +115,8 @@ h2{
         font-size: 30px;
         background-color: rgba(255, 255, 255, 0.1);
     }
-    .section1{
-        width: 768px;
-        height: 900px;
-        margin-top: 50px;
-    }
-    .clase {
-        margin-right: 45px;
-        font-size: 20px;
-        color: aliceblue;
-        text-align: left;
-        
-        border-radius: 20px;
-        
-    }
-    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+     }
 }
