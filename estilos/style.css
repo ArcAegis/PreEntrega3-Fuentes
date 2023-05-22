@@ -18,6 +18,9 @@ header{
     width: 650px;
     margin-left: 50px;
 }
+body{
+    padding: 10px;
+}
 .body-total{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/messi.jpg);
 }
@@ -38,7 +41,6 @@ header{
     text-align: left;
     padding-left: 10px;
     border-radius: 20px;
-    
 }
 .lar{
     width: 676px;
@@ -70,13 +72,13 @@ header{
     display: flex;
 }
 .section1{
-    width: 100%;
     height: 900px;
     margin-top: 50px;
 }
 
 footer {
     background-color: black;
+    border-radius:10px;
 }
 
 
@@ -87,14 +89,20 @@ ul{
     display: inline-block;
 }
 .vid{
-    margin-left: 40px;
     margin-top: 50px;
+    width:560px;
+    height:315px;
+    text-align: center;
+}
+.container-video{
+    text-align: center;
+    padding-top: 20px;
 }
 
 h2{
-    padding-left: 200px;
     color: aliceblue;
     font-family: sans-serif;
+    text-align: center;
 }
 .whit{
     color: white;
@@ -104,19 +112,29 @@ h2{
 }
 
 .grid-container{
-    width: 100%;
     display: grid;
     grid-template-columns:  2fr 2fr;
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
     .navv{
         font-size: 30px;
         background-color: rgba(255, 255, 255, 0.1);
     }
     .grid-container {
-        display: flex;
         flex-direction: column;
-     }
+        grid-template-columns: 1fr;
+    }
+    
+    footer{
+        height: 10%;
+        position: fixed;
+        bottom: 0px;
+        border-radius:10px;
+    }
+    main{
+        padding-bottom: 55%;
+    }
+
 }
