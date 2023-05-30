@@ -13,10 +13,14 @@ h1 {
 }
 
 header{
-    height: 110px;
     color: white;
     width: 650px;
     margin-left: 50px;
+}
+nav{
+    margin-top: 40px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.479);
 }
 body{
     padding: 10px;
@@ -73,14 +77,13 @@ body{
 }
 .section1{
     height: 900px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 footer {
     background-color: black;
     border-radius:10px;
 }
-
 
 ul{
     list-style: none;
@@ -98,6 +101,9 @@ ul{
     text-align: center;
     padding-top: 20px;
 }
+.borders{
+    border-radius:10px;
+}
 
 h2{
     color: aliceblue;
@@ -107,10 +113,6 @@ h2{
 .whit{
     color: white;
 }
-.transparent-navbar {
-    background-color: transparent;
-}
-
 .grid-container{
     display: grid;
     grid-template-columns:  2fr 2fr;
@@ -135,6 +137,9 @@ h2{
     }
     main{
         padding-bottom: 55%;
+    }
+    nav{
+        background-color: rgba(0, 0, 0, 0.671);
     }
 
 }
