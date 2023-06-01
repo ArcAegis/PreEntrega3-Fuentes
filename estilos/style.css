@@ -12,9 +12,9 @@ h1 {
     font-family: DELI;
 }
 
-header{
+.headerlarger{
     color: white;
-    width: 650px;
+    width: 390px;
     margin-left: 50px;
 }
 nav{
@@ -39,8 +39,6 @@ body{
 .clase {
     margin-right: 45px;
     font-size: 27px;
-    margin-bottom: 25px;
-    margin-top: 10px;
     color: aliceblue;
     text-align: left;
     padding-left: 10px;
@@ -117,7 +115,9 @@ h2{
     display: grid;
     grid-template-columns:  2fr 2fr;
 }
-
+.transparent-progress {
+    background-color: transparent;
+  }
 
 @media screen and (max-width:1000px){
     .navv{
