@@ -24,6 +24,11 @@ h2 {
   width: 390px;
   margin-left: 50px;
 }
+@media screen and (max-width: 1000px) {
+  .headerlarger {
+    margin-left: 20px;
+  }
+}
 
 nav {
   margin-top: 40px;
@@ -48,8 +53,9 @@ nav {
 }
 @media screen and (max-width: 1000px) {
   .body-home {
+    width: 110%;
     background-size: 100% 100%;
-    height: 400px;
+    height: 500px;
   }
 }
 
