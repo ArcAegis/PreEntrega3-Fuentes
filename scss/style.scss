@@ -11,7 +11,7 @@ h1 {
     padding-top: 35px;
     font-family: DELI;
 }
-h2{
+.hh2{
     color: aliceblue;
     font-family: sans-serif;
     text-align: center;
@@ -71,21 +71,6 @@ nav{
     font-size: 20px;
     margin-left: 20px;
 }
-.bluee{
-    background-color: rgba(13, 67, 117, 0.384)
-}
-.redd{
-    background-color: rgba(117, 13, 13, 0.349)
-}
-.verdd{
-    background-color: rgba(13, 117, 44, 0.349)
-}
-.nar{
-    background-color: rgba(150, 88, 17, 0.356);
-}
-.vio{
-    background-color: rgba(48, 8, 75, 0.397);
-}
 
 .container {
     display: flex;
@@ -118,6 +103,24 @@ ul{
 }
 .borders{
     border-radius:10px;
+}
+.bluee{
+    background-color: rgba(13, 67, 117, 0.384)
+}
+.redd{
+    background-color: rgba(117, 13, 13, 0.349)
+}
+.verdd{
+    background-color: rgba(13, 117, 44, 0.349)
+}
+.nar{
+    background-color: rgba(150, 88, 17, 0.356);
+}
+.vio{
+    background-color: rgba(48, 8, 75, 0.397);
+}
+.celest{
+    background-color: rgb(180, 224, 226);
 }
 .whit{
     color: white;
