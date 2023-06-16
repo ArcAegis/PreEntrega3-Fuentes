@@ -29,6 +29,16 @@ h1 {
     margin-left: 20px;
   }
 }
+@media screen and (max-width: 400px) {
+  .headerlarger {
+    width: 75%;
+    margin-left: 30px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
 
 nav {
   margin-top: 40px;
@@ -48,7 +58,7 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.315)), url(../archivos/img/messicopa.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 1000px;
   width: 100%;
 }
 @media screen and (max-width: 1000px) {
@@ -83,10 +93,6 @@ nav {
   padding-bottom: 1px;
   font-size: 20px;
   margin-left: 20px;
-}
-
-.container {
-  display: flex;
 }
 
 .section1 {
@@ -147,6 +153,10 @@ ul {
   background-color: rgb(180, 224, 226);
 }
 
+.blanco_fondo {
+  background-color: white;
+}
+
 .whit {
   color: white;
 }
@@ -154,6 +164,65 @@ ul {
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 2fr;
+}
+
+.grid1 {
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+}
+.grid1 .div1 {
+  grid-area: 1/1/2/2;
+}
+.grid1 .div2 {
+  grid-area: 1/2/2/3;
+}
+@media screen and (max-width: 400px) {
+  .grid1 {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .grid1 .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .grid1 .div2 {
+    grid-area: 2/1/3/2;
+  }
+}
+
+.title-box {
+  background-color: #0d0583;
+  padding: 10px;
+  width: 40%;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .title-box {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.custom-title {
+  font-size: 50px;
+  margin: 0;
+  transform: translate(80px);
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  .custom-title {
+    font-size: 30px;
+    transform: translate(0px);
+  }
 }
 
 .transparent-progress {
