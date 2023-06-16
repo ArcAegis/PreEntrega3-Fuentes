@@ -63,10 +63,30 @@ nav {
 }
 @media screen and (max-width: 1000px) {
   .body-home {
-    width: 110%;
+    width: 100%;
     background-size: 100% 100%;
     height: 500px;
   }
+}
+
+.containerTxt {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid black;
+  overflow: hidden;
+  margin-left: 100px;
+  z-index: 1;
+  margin-top: -30px;
+}
+@media screen and (max-width: 900px) {
+  .containerTxt {
+    margin-left: 0px;
+  }
+}
+
+p {
+  word-wrap: break-word;
 }
 
 .stats {
@@ -153,8 +173,19 @@ ul {
   background-color: rgb(180, 224, 226);
 }
 
-.blanco_fondo {
-  background-color: white;
+.blue_fondo {
+  background-color: rgb(21, 35, 89);
+}
+
+.trasnpB_fondo {
+  background-color: rgb(66, 85, 142);
+  padding: 10px;
+}
+
+.trasnpR_fondo {
+  background-color: rgb(189, 58, 58);
+  padding: 10px;
+  border: 10px solid rgb(0, 11, 82);
 }
 
 .whit {
@@ -164,6 +195,11 @@ ul {
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 2fr;
+}
+
+.separador {
+  margin-top: 80px;
+  padding: 10px;
 }
 
 .grid1 {
@@ -180,12 +216,12 @@ ul {
 .grid1 .div2 {
   grid-area: 1/2/2/3;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .grid1 {
-    margin-left: 10px;
+    margin-left: 8px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
@@ -194,6 +230,41 @@ ul {
   }
   .grid1 .div2 {
     grid-area: 2/1/3/2;
+  }
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+}
+.grid2 .div1 {
+  grid-area: 1/1/2/2;
+}
+.grid2 .div2 {
+  grid-area: 2/1/3/2;
+}
+.grid2 .div3 {
+  grid-area: 1/2/3/3;
+}
+@media screen and (max-width: 600px) {
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .grid2 .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .grid2 .div2 {
+    grid-area: 2/1/3/2;
+  }
+  .grid2 .div3 {
+    grid-area: 3/1/4/2;
   }
 }
 
@@ -207,6 +278,22 @@ ul {
 }
 @media screen and (max-width: 1000px) {
   .title-box {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.title-boxH3 {
+  background-color: #cc0808;
+  padding: 10px;
+  width: 25%;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .title-boxH3 {
     width: -moz-fit-content;
     width: fit-content;
   }
