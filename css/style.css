@@ -69,24 +69,9 @@ nav {
   }
 }
 
-.containerTxt {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: 1px solid black;
-  overflow: hidden;
-  margin-left: 100px;
-  z-index: 1;
-  margin-top: -30px;
-}
-@media screen and (max-width: 900px) {
-  .containerTxt {
-    margin-left: 0px;
-  }
-}
-
 p {
   word-wrap: break-word;
+  font-weight: bold;
 }
 
 .stats {
@@ -177,139 +162,21 @@ ul {
   background-color: rgb(21, 35, 89);
 }
 
-.trasnpB_fondo {
-  background-color: rgb(66, 85, 142);
-  padding: 10px;
-}
-
-.trasnpR_fondo {
-  background-color: rgb(189, 58, 58);
-  padding: 10px;
-  border: 10px solid rgb(0, 11, 82);
+.rojoS {
+  background-color: #cc0808;
 }
 
 .whit {
   color: white;
 }
 
+.blanco_trans {
+  background-color: rgba(250, 234, 234, 0.803);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 2fr;
-}
-
-.separador {
-  margin-top: 80px;
-  padding: 10px;
-}
-
-.grid1 {
-  margin-left: 70px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 40px;
-  grid-row-gap: 10px;
-}
-.grid1 .div1 {
-  grid-area: 1/1/2/2;
-}
-.grid1 .div2 {
-  grid-area: 1/2/2/3;
-}
-@media screen and (max-width: 600px) {
-  .grid1 {
-    margin-left: 8px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .grid1 .div1 {
-    grid-area: 1/1/2/2;
-  }
-  .grid1 .div2 {
-    grid-area: 2/1/3/2;
-  }
-}
-
-.grid2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
-  grid-column-gap: 7px;
-  grid-row-gap: 7px;
-}
-.grid2 .div1 {
-  grid-area: 1/1/2/2;
-}
-.grid2 .div2 {
-  grid-area: 2/1/3/2;
-}
-.grid2 .div3 {
-  grid-area: 1/2/3/3;
-}
-@media screen and (max-width: 600px) {
-  .grid2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .grid2 .div1 {
-    grid-area: 1/1/2/2;
-  }
-  .grid2 .div2 {
-    grid-area: 2/1/3/2;
-  }
-  .grid2 .div3 {
-    grid-area: 3/1/4/2;
-  }
-}
-
-.title-box {
-  background-color: #0d0583;
-  padding: 10px;
-  width: 40%;
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 1000px) {
-  .title-box {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
-
-.title-boxH3 {
-  background-color: #cc0808;
-  padding: 10px;
-  width: 25%;
-  display: inline-block;
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 1000px) {
-  .title-boxH3 {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
-
-.custom-title {
-  font-size: 50px;
-  margin: 0;
-  transform: translate(80px);
-  color: white;
-}
-@media screen and (max-width: 1000px) {
-  .custom-title {
-    font-size: 30px;
-    transform: translate(0px);
-  }
 }
 
 .transparent-progress {
@@ -337,4 +204,47 @@ ul {
   nav {
     background-color: rgba(0, 0, 0, 0.671);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+.fondo1RM {
+  background-image: url(../archivos/img/ronnie-messi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
