@@ -1,14 +1,15 @@
-
-
-.fondo1RM {
-    background-image: url(../archivos/img/ronnie-messi.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+p{
+  word-wrap: break-word;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .divGrid3 {
+    height: 1400px;
+  }
 }
 
 .containerTxt {
     width: 100%;
-    height: -moz-fit-content;
     height: fit-content;
     border: 1px solid black;
     overflow: hidden;
@@ -150,7 +151,34 @@
       grid-area: 1/1/2/2;
     }
   }
-  
+  .grid4 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .grid4 .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .grid4 .div2 {
+    grid-area: 1/2/2/3;
+  }
+  @media screen and (max-width: 600px) {
+    .grid4 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+    .grid4 .div1 {
+      grid-area: 1/1/2/2;
+    }
+    .grid4 .div2 {
+      grid-area: 2/1/3/2;
+    }
+  }
   .title-box {
     background-color: #0d0583;
     padding: 10px;
@@ -168,6 +196,21 @@
   
   .title-boxH3 {
     background-color: #cc0808;
+    padding: 10px;
+    width: 25%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 1000px) {
+    .title-boxH3 {
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+  }
+  .title-boxH3Arg {
+    background-color: #06c7e9;
     padding: 10px;
     width: 25%;
     display: inline-block;
@@ -202,4 +245,19 @@
     height: fit-content;
     border: 10px solid rgba(4, 4, 112, 0.847);
   }
-  
+  .customTEXTArg {
+    padding: 30px;
+    overflow: hidden;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: 10px solid rgba(94, 232, 241, 0.847);
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+    @media screen and (max-width: 700) {
+      .customTEXTArg {
+        margin-top: 0px;
+        margin-left: 0px;
+        z-index: 1
+      }
+  }
