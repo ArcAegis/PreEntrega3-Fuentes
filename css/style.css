@@ -47,7 +47,11 @@ nav {
 }
 
 .body-total {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../archivos/img/messi.jpg);
+  background-color: #cc0808;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
 }
 
 .body-bar {
@@ -70,12 +74,10 @@ nav {
 }
 
 .stats {
-  width: 578px;
-  padding: 10px;
+  width: 80%;
 }
 
 .clase {
-  margin-right: 45px;
   font-size: 27px;
   color: aliceblue;
   text-align: left;
@@ -84,13 +86,12 @@ nav {
 }
 
 .lar {
-  width: 676px;
+  width: 80%;
 }
 
 .cor {
   padding-left: 25px;
-  height: 20px;
-  padding-bottom: 1px;
+  width: 60%;
   font-size: 20px;
   margin-left: 20px;
 }
@@ -102,7 +103,11 @@ nav {
 
 footer {
   background-color: black;
-  padding: 50px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 ul {
@@ -192,9 +197,43 @@ ul {
     grid-template-columns: 1fr;
   }
   main {
-    padding-bottom: 55%;
+    padding-bottom: 0px;
   }
   nav {
     background-color: rgba(0, 0, 0, 0.671);
   }
+}
+.parent {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+.parent .div1 {
+  grid-area: 1/1/2/2;
+}
+.parent .div2 {
+  grid-area: 1/2/2/3;
+}
+@media screen and (max-width: 700px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .parent .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .parent .div2 {
+    grid-area: 2/1/3/2;
+  }
+}
+
+.div1 img {
+  width: 100%;
+  height: 560px;
 }/*# sourceMappingURL=style.css.map */
