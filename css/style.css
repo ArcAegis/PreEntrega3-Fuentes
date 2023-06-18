@@ -21,7 +21,7 @@ h1 {
 
 .headerlarger {
   color: white;
-  width: 390px;
+  width: 300px;
   margin-left: 50px;
 }
 @media screen and (max-width: 1000px) {
