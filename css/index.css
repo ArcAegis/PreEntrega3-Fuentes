@@ -169,7 +169,7 @@ p{
     .grid4 {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: 2fr 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
     }
@@ -198,7 +198,7 @@ p{
   .title-boxH3 {
     background-color: #cc0808;
     padding: 10px;
-    width: 25%;
+    width: 29%;
     display: inline-block;
     margin-left: 20px;
     margin-top: 30px;
@@ -213,7 +213,7 @@ p{
   .title-boxH3Arg {
     background-color: #06c7e9;
     padding: 10px;
-    width: 35%;
+    width: 39%;
     display: inline-block;
     margin-left: 20px;
     margin-top: 30px;

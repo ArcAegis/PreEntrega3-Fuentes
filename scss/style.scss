@@ -6,10 +6,15 @@
     font-family: DELI;
     src: url(../archivos/fonts/Deli.otf);
 }
+.style1t{
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    color: white;
+}
 h1 {
     text-align: center;
     padding-top: 35px;
     font-family: DELI;
+    color: white;
 }
 .hh2{
     color: aliceblue;
@@ -19,7 +24,7 @@ h1 {
 
 .headerlarger{
     color: white;
-    width: 390px;
+    width: 300px;
     margin-left: 50px;
     @media screen and (max-width:1000px){
         margin-left: 20px;
@@ -38,15 +43,47 @@ nav{
     background-color: rgba(0, 0, 0, 0.479);
 }
 .body-total{
-    background-color: #cc0808; 
-   background-size: cover;
+    background-color: #cde1ec70; 
+    background-size: cover;
     background-repeat: no-repeat;
     height: 1000px;
     width: 100%;
 }
     
+.body_arg{
+    background-image:linear-gradient(hsla(209, 79%, 16%, 0.5), rgba(27, 57, 114, 0.5)), url(../archivos/img/fondoarg.jpg); 
+    background-color: #cde1ec70; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    @media screen and (max-width:1000px){
+        background-image:linear-gradient(hsla(209, 79%, 16%, 0.5), rgba(27, 57, 114, 0.5)), url(../archivos/img/fondoarg2.png); 
+        background-color: #cde1ec70; 
+        background-repeat: repeat;
+        background-size: 100% 54%;
+    }
+}
 .body-bar{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../archivos/img/messibar.jpg);
+    @media screen and (max-width:1000px){
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../archivos/img/fondobar2.png);
+        background-size: 100% 54%;
+        background-repeat: repeat;
+    }
+}
+.body_psg{
+    background-image:linear-gradient(rgba(33, 9, 73, 0.527), rgba(33, 9, 73, 0.527)), url(../archivos/img/fondopsg.jpg); 
+    background-color: #cde1ec70; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    @media screen and (max-width:1000px){
+        background-image:linear-gradient(rgba(33, 9, 73, 0.527), rgba(33, 9, 73, 0.527)), url(../archivos/img/fondopsg2.png); 
+        background-color: #cde1ec70; 
+        background-repeat: repeat;
+        background-size: 100% 53%;
+    }
+
 }
 
 .body-home{
@@ -61,6 +98,14 @@ nav{
         height: 500px;
     }
 }
+.separador2 {
+    margin-top: 80px;
+    padding: 10px;
+  }
+  .separador3 {
+    margin-top: 600px;
+    padding: 10px;
+  }
 .stats {
     width: 80%
 }
@@ -114,21 +159,21 @@ ul{
     border-radius:10px;
 }
 
-//Colores
+//Colores 
 .bluee{
-    background-color: rgba(13, 67, 117, 0.384)
+    background-color: rgba(13, 67, 117, 0.521)
 }
 .redd{
-    background-color: rgba(117, 13, 13, 0.349)
+    background-color: rgba(117, 13, 13, 0.562)
 }
 .verdd{
-    background-color: rgba(13, 117, 44, 0.349)
+    background-color: rgba(13, 117, 44, 0.493)
 }
 .nar{
-    background-color: rgba(150, 88, 17, 0.356);
+    background-color: rgba(150, 88, 17, 0.534);
 }
 .vio{
-    background-color: rgba(48, 8, 75, 0.397);
+    background-color: rgba(48, 8, 75, 0.651);
 }
 .celest{
     background-color: rgb(180, 224, 226);
